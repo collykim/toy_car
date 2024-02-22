@@ -1,0 +1,93 @@
+[2024-02-15T15:41:59.291+0900] {processor.py:161} INFO - Started process (PID=995) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:41:59.292+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-02-15T15:41:59.293+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:41:59.293+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:41:59.298+0900] {logging_mixin.py:188} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/io/path.py:150 DeprecationWarning: UPath._from_parts is deprecated and should not be used. Please follow the universal_pathlib==0.2.0 migration guide at https://github.com/fsspec/universal_pathlib for more information.
+[2024-02-15T15:41:59.303+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:41:59.299+0900] {dagbag.py:348} ERROR - Failed to import: /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py", line 46, in <module>
+    base = ObjectStoragePath("s3://aws_default@airflow-tutorial-data/")
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 150, in __new__
+    return cls._from_parts(args_list, url=parsed_url, conn_id=conn_id, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 423, in _from_parts
+    obj.__init__(*parts, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 202, in __init__
+    self._storage_options = type(self)._parse_storage_options(
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 350, in _parse_storage_options
+    return inst._fs.storage_options
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 62, in _fs
+    return self._store.fs
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 59, in fs
+    return self._connect()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 108, in _connect
+    self._fs = get_fs(self.protocol, self.conn_id)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/__init__.py", line 93, in get_fs
+    raise ValueError(f"No filesystem registered for scheme {scheme}") from None
+ValueError: No filesystem registered for scheme s3
+[2024-02-15T15:41:59.304+0900] {processor.py:842} WARNING - No viable dags retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:41:59.325+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py took 0.038 seconds
+[2024-02-15T15:42:57.851+0900] {processor.py:161} INFO - Started process (PID=1052) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:42:57.853+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-02-15T15:42:57.854+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:57.853+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:42:57.859+0900] {logging_mixin.py:188} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/io/path.py:150 DeprecationWarning: UPath._from_parts is deprecated and should not be used. Please follow the universal_pathlib==0.2.0 migration guide at https://github.com/fsspec/universal_pathlib for more information.
+[2024-02-15T15:42:57.861+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:57.860+0900] {dagbag.py:348} ERROR - Failed to import: /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py", line 46, in <module>
+    base = ObjectStoragePath("s3://aws_default@airflow-tutorial-data/")
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 150, in __new__
+    return cls._from_parts(args_list, url=parsed_url, conn_id=conn_id, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 423, in _from_parts
+    obj.__init__(*parts, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 202, in __init__
+    self._storage_options = type(self)._parse_storage_options(
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 350, in _parse_storage_options
+    return inst._fs.storage_options
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 62, in _fs
+    return self._store.fs
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 59, in fs
+    return self._connect()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 108, in _connect
+    self._fs = get_fs(self.protocol, self.conn_id)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/__init__.py", line 93, in get_fs
+    raise ValueError(f"No filesystem registered for scheme {scheme}") from None
+ValueError: No filesystem registered for scheme s3
+[2024-02-15T15:42:57.861+0900] {processor.py:842} WARNING - No viable dags retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:42:57.882+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py took 0.034 seconds
+[2024-02-15T15:43:01.947+0900] {processor.py:161} INFO - Started process (PID=1057) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:43:01.948+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py for tasks to queue
+[2024-02-15T15:43:01.949+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:01.949+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:43:01.954+0900] {logging_mixin.py:188} WARNING - /usr/local/lib/python3.10/dist-packages/airflow/io/path.py:150 DeprecationWarning: UPath._from_parts is deprecated and should not be used. Please follow the universal_pathlib==0.2.0 migration guide at https://github.com/fsspec/universal_pathlib for more information.
+[2024-02-15T15:43:01.956+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:01.955+0900] {dagbag.py:348} ERROR - Failed to import: /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py", line 46, in <module>
+    base = ObjectStoragePath("s3://aws_default@airflow-tutorial-data/")
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 150, in __new__
+    return cls._from_parts(args_list, url=parsed_url, conn_id=conn_id, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 423, in _from_parts
+    obj.__init__(*parts, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 202, in __init__
+    self._storage_options = type(self)._parse_storage_options(
+  File "/usr/local/lib/python3.10/dist-packages/upath/core.py", line 350, in _parse_storage_options
+    return inst._fs.storage_options
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/path.py", line 62, in _fs
+    return self._store.fs
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 59, in fs
+    return self._connect()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/store/__init__.py", line 108, in _connect
+    self._fs = get_fs(self.protocol, self.conn_id)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/io/__init__.py", line 93, in get_fs
+    raise ValueError(f"No filesystem registered for scheme {scheme}") from None
+ValueError: No filesystem registered for scheme s3
+[2024-02-15T15:43:01.957+0900] {processor.py:842} WARNING - No viable dags retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py
+[2024-02-15T15:43:01.977+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/tutorial_objectstorage.py took 0.034 seconds

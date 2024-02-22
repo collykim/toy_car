@@ -1,0 +1,35 @@
+[2024-02-16T17:22:45.216+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Community_Spark_Submit.Community_Spark_task manual__2024-02-16T08:22:41.885694+00:00 [queued]>
+[2024-02-16T17:22:45.224+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Community_Spark_Submit.Community_Spark_task manual__2024-02-16T08:22:41.885694+00:00 [queued]>
+[2024-02-16T17:22:45.224+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-16T17:22:45.240+0900] {taskinstance.py:2191} INFO - Executing <Task(SparkSubmitOperator): Community_Spark_task> on 2024-02-16 08:22:41.885694+00:00
+[2024-02-16T17:22:45.245+0900] {standard_task_runner.py:60} INFO - Started process 4654 to run task
+[2024-02-16T17:22:45.249+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Community_Spark_Submit', 'Community_Spark_task', 'manual__2024-02-16T08:22:41.885694+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/community_spark.py', '--cfg-path', '/tmp/tmpt6po_6kr']
+[2024-02-16T17:22:45.250+0900] {standard_task_runner.py:88} INFO - Job 42: Subtask Community_Spark_task
+[2024-02-16T17:22:45.289+0900] {task_command.py:423} INFO - Running <TaskInstance: Community_Spark_Submit.Community_Spark_task manual__2024-02-16T08:22:41.885694+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-16T17:22:45.350+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Community_Spark_Submit' AIRFLOW_CTX_TASK_ID='Community_Spark_task' AIRFLOW_CTX_EXECUTION_DATE='2024-02-16T08:22:41.885694+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-16T08:22:41.885694+00:00'
+[2024-02-16T17:22:45.355+0900] {base.py:83} INFO - Using connection ID 'spark_default' for task execution.
+[2024-02-16T17:22:45.356+0900] {spark_submit.py:401} INFO - Spark-Submit cmd: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/community_spark.py
+[2024-02-16T17:22:48.722+0900] {spark_submit.py:571} INFO - Exception in thread "main" org.apache.spark.SparkException: When running with master 'yarn' either HADOOP_CONF_DIR or YARN_CONF_DIR must be set in the environment.
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:650)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:281)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:237)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:122)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1103)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1103)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2024-02-16T17:22:48.723+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2024-02-16T17:22:48.724+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2024-02-16T17:22:48.751+0900] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 174, in execute
+    self._hook.submit(self._application)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 502, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/community_spark.py. Error code is: 1.
+[2024-02-16T17:22:48.754+0900] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Community_Spark_Submit, task_id=Community_Spark_task, execution_date=20240216T082241, start_date=20240216T082245, end_date=20240216T082248
+[2024-02-16T17:22:48.769+0900] {standard_task_runner.py:107} ERROR - Failed to execute job 42 for task Community_Spark_task (Cannot execute: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/community_spark.py. Error code is: 1.; 4654)
+[2024-02-16T17:22:48.793+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-16T17:22:48.807+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

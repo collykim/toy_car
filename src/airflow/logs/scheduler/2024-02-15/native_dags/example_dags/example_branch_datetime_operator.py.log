@@ -1,0 +1,30 @@
+[2024-02-15T15:42:43.666+0900] {processor.py:161} INFO - Started process (PID=1039) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:42:43.667+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2024-02-15T15:42:43.668+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.667+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:42:43.680+0900] {processor.py:840} INFO - DAG(s) 'example_branch_datetime_operator', 'example_branch_datetime_operator_2', 'example_branch_datetime_operator_3' retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:42:43.796+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.795+0900] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator
+[2024-02-15T15:42:43.808+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.808+0900] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator
+[2024-02-15T15:42:43.817+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.817+0900] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator
+[2024-02-15T15:42:43.838+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.837+0900] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator_2
+[2024-02-15T15:42:43.847+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.847+0900] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator_2
+[2024-02-15T15:42:43.857+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.856+0900] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator_2
+[2024-02-15T15:42:43.877+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.877+0900] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_datetime_operator_3
+[2024-02-15T15:42:43.886+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.886+0900] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_datetime_operator_3
+[2024-02-15T15:42:43.895+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.895+0900] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_datetime_operator_3
+[2024-02-15T15:42:43.896+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.896+0900] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-15T15:42:43.909+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.909+0900] {dag.py:3058} INFO - Creating ORM DAG for example_branch_datetime_operator
+[2024-02-15T15:42:43.910+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.910+0900] {dag.py:3058} INFO - Creating ORM DAG for example_branch_datetime_operator_2
+[2024-02-15T15:42:43.910+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.910+0900] {dag.py:3058} INFO - Creating ORM DAG for example_branch_datetime_operator_3
+[2024-02-15T15:42:43.921+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.921+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:42:43.923+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.923+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:42:43.925+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:43.925+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:42:43.947+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.285 seconds
+[2024-02-15T15:43:41.104+0900] {processor.py:161} INFO - Started process (PID=1107) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:43:41.105+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py for tasks to queue
+[2024-02-15T15:43:41.106+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:41.106+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:43:41.119+0900] {processor.py:840} INFO - DAG(s) 'example_branch_datetime_operator_3', 'example_branch_datetime_operator', 'example_branch_datetime_operator_2' retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py
+[2024-02-15T15:43:41.148+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:41.148+0900] {dag.py:3036} INFO - Sync 3 DAGs
+[2024-02-15T15:43:41.170+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:41.170+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:43:41.175+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:41.175+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator_2 to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:43:41.178+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:41.178+0900] {dag.py:3823} INFO - Setting next_dagrun for example_branch_datetime_operator_3 to 2024-02-14 00:00:00+00:00, run_after=2024-02-15 00:00:00+00:00
+[2024-02-15T15:43:41.198+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_branch_datetime_operator.py took 0.098 seconds

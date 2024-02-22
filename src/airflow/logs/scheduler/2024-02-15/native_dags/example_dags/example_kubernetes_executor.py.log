@@ -1,0 +1,12 @@
+[2024-02-15T15:42:52.668+0900] {processor.py:161} INFO - Started process (PID=1048) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:42:52.670+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-15T15:42:52.671+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:52.670+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:42:52.674+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:42:52.674+0900] {example_kubernetes_executor.py:38} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2024-02-15T15:42:52.675+0900] {processor.py:842} WARNING - No viable dags retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:42:52.686+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py took 0.021 seconds
+[2024-02-15T15:43:48.449+0900] {processor.py:161} INFO - Started process (PID=1118) to work on /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:43:48.450+0900] {processor.py:830} INFO - Processing file /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py for tasks to queue
+[2024-02-15T15:43:48.452+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:48.451+0900] {dagbag.py:538} INFO - Filling up the DagBag from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:43:48.455+0900] {logging_mixin.py:188} INFO - [2024-02-15T15:43:48.455+0900] {example_kubernetes_executor.py:38} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2024-02-15T15:43:48.456+0900] {processor.py:842} WARNING - No viable dags retrieved from /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py
+[2024-02-15T15:43:48.469+0900] {processor.py:183} INFO - Processing /usr/local/lib/python3.10/dist-packages/airflow/example_dags/example_kubernetes_executor.py took 0.024 seconds

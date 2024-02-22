@@ -1,0 +1,17 @@
+[2024-02-15T17:36:48.163+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CollectNaverNews.news_url_collect manual__2024-02-15T08:36:05.963736+00:00 [queued]>
+[2024-02-15T17:36:48.169+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CollectNaverNews.news_url_collect manual__2024-02-15T08:36:05.963736+00:00 [queued]>
+[2024-02-15T17:36:48.169+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-15T17:36:48.341+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): news_url_collect> on 2024-02-15 08:36:05.963736+00:00
+[2024-02-15T17:36:48.347+0900] {standard_task_runner.py:60} INFO - Started process 6289 to run task
+[2024-02-15T17:36:48.351+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'CollectNaverNews', 'news_url_collect', 'manual__2024-02-15T08:36:05.963736+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/Naver_News_Collect.py', '--cfg-path', '/tmp/tmpsboev9cb']
+[2024-02-15T17:36:48.353+0900] {standard_task_runner.py:88} INFO - Job 7: Subtask news_url_collect
+[2024-02-15T17:36:48.394+0900] {task_command.py:423} INFO - Running <TaskInstance: CollectNaverNews.news_url_collect manual__2024-02-15T08:36:05.963736+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-15T17:36:48.453+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='CollectNaverNews' AIRFLOW_CTX_TASK_ID='news_url_collect' AIRFLOW_CTX_EXECUTION_DATE='2024-02-15T08:36:05.963736+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-15T08:36:05.963736+00:00'
+[2024-02-15T17:36:48.456+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T17:36:48.544+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T17:36:48.636+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T17:36:48.721+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T17:37:02.065+0900] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-15T17:37:02.073+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=CollectNaverNews, task_id=news_url_collect, execution_date=20240215T083605, start_date=20240215T083648, end_date=20240215T083702
+[2024-02-15T17:37:02.119+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-15T17:37:02.135+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

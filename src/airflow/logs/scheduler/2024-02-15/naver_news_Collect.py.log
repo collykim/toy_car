@@ -1,0 +1,98 @@
+[2024-02-15T16:39:59.915+0900] {processor.py:161} INFO - Started process (PID=4169) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:39:59.916+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:39:59.917+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:39:59.916+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:39:59.921+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:39:59.920+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:39:59.922+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:39:59.940+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.030 seconds
+[2024-02-15T16:40:30.093+0900] {processor.py:161} INFO - Started process (PID=4172) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:40:30.094+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:40:30.095+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:40:30.095+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:40:30.099+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:40:30.098+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:40:30.099+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:40:30.120+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.031 seconds
+[2024-02-15T16:41:00.467+0900] {processor.py:161} INFO - Started process (PID=4174) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:00.469+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:41:00.470+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:41:00.470+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:00.474+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:41:00.473+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:41:00.474+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:00.494+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.031 seconds
+[2024-02-15T16:41:30.850+0900] {processor.py:161} INFO - Started process (PID=4180) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:30.851+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:41:30.852+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:41:30.851+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:30.855+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:41:30.854+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:41:30.856+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:41:30.876+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.030 seconds
+[2024-02-15T16:42:01.220+0900] {processor.py:161} INFO - Started process (PID=4204) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:01.222+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:42:01.223+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:42:01.222+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:01.226+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:42:01.225+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:42:01.227+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:01.247+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.031 seconds
+[2024-02-15T16:42:31.408+0900] {processor.py:161} INFO - Started process (PID=4220) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:31.409+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:42:31.411+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:42:31.410+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:31.414+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:42:31.413+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:42:31.414+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:42:31.434+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.029 seconds
+[2024-02-15T16:43:01.850+0900] {processor.py:161} INFO - Started process (PID=4245) to work on /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:43:01.852+0900] {processor.py:830} INFO - Processing file /home/ubuntu/airflow/dags/naver_news_Collect.py for tasks to queue
+[2024-02-15T16:43:01.853+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:43:01.853+0900] {dagbag.py:538} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:43:01.857+0900] {logging_mixin.py:188} INFO - [2024-02-15T16:43:01.856+0900] {dagbag.py:348} ERROR - Failed to import: /home/ubuntu/airflow/dags/naver_news_Collect.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/ubuntu/airflow/dags/naver_news_Collect.py", line 5, in <module>
+    "execution_count": null,
+NameError: name 'null' is not defined
+[2024-02-15T16:43:01.857+0900] {processor.py:842} WARNING - No viable dags retrieved from /home/ubuntu/airflow/dags/naver_news_Collect.py
+[2024-02-15T16:43:01.878+0900] {processor.py:183} INFO - Processing /home/ubuntu/airflow/dags/naver_news_Collect.py took 0.031 seconds

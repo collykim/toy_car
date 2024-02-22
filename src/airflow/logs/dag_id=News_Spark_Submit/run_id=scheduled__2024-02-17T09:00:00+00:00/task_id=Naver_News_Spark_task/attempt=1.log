@@ -1,0 +1,35 @@
+[2024-02-18T18:00:08.200+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: News_Spark_Submit.Naver_News_Spark_task scheduled__2024-02-17T09:00:00+00:00 [queued]>
+[2024-02-18T18:00:08.209+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: News_Spark_Submit.Naver_News_Spark_task scheduled__2024-02-17T09:00:00+00:00 [queued]>
+[2024-02-18T18:00:08.209+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-18T18:00:08.225+0900] {taskinstance.py:2191} INFO - Executing <Task(SparkSubmitOperator): Naver_News_Spark_task> on 2024-02-17 09:00:00+00:00
+[2024-02-18T18:00:08.230+0900] {standard_task_runner.py:60} INFO - Started process 636988 to run task
+[2024-02-18T18:00:08.234+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'News_Spark_Submit', 'Naver_News_Spark_task', 'scheduled__2024-02-17T09:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/news_spark.py', '--cfg-path', '/tmp/tmpto7gjop7']
+[2024-02-18T18:00:08.236+0900] {standard_task_runner.py:88} INFO - Job 57: Subtask Naver_News_Spark_task
+[2024-02-18T18:00:08.279+0900] {task_command.py:423} INFO - Running <TaskInstance: News_Spark_Submit.Naver_News_Spark_task scheduled__2024-02-17T09:00:00+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-18T18:00:08.350+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='News_Spark_Submit' AIRFLOW_CTX_TASK_ID='Naver_News_Spark_task' AIRFLOW_CTX_EXECUTION_DATE='2024-02-17T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-17T09:00:00+00:00'
+[2024-02-18T18:00:08.356+0900] {base.py:83} INFO - Using connection ID 'spark_default' for task execution.
+[2024-02-18T18:00:08.357+0900] {spark_submit.py:401} INFO - Spark-Submit cmd: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/naver_news_spark.py
+[2024-02-18T18:00:10.500+0900] {spark_submit.py:571} INFO - Exception in thread "main" org.apache.spark.SparkException: When running with master 'yarn' either HADOOP_CONF_DIR or YARN_CONF_DIR must be set in the environment.
+[2024-02-18T18:00:10.500+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:650)
+[2024-02-18T18:00:10.500+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:281)
+[2024-02-18T18:00:10.501+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:237)
+[2024-02-18T18:00:10.501+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:122)
+[2024-02-18T18:00:10.501+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1103)
+[2024-02-18T18:00:10.501+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1103)
+[2024-02-18T18:00:10.502+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:86)
+[2024-02-18T18:00:10.502+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2024-02-18T18:00:10.502+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2024-02-18T18:00:10.502+0900] {spark_submit.py:571} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2024-02-18T18:00:10.530+0900] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 174, in execute
+    self._hook.submit(self._application)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 502, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/naver_news_spark.py. Error code is: 1.
+[2024-02-18T18:00:10.533+0900] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=News_Spark_Submit, task_id=Naver_News_Spark_task, execution_date=20240217T090000, start_date=20240218T090008, end_date=20240218T090010
+[2024-02-18T18:00:10.547+0900] {standard_task_runner.py:107} ERROR - Failed to execute job 57 for task Naver_News_Spark_task (Cannot execute: spark-submit --master yarn --name arrow-spark --queue root.default /home/ubuntu/spark_file/naver_news_spark.py. Error code is: 1.; 636988)
+[2024-02-18T18:00:10.578+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-18T18:00:10.592+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

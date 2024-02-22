@@ -1,0 +1,818 @@
+[2024-02-15T18:29:59.470+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CollectNaverNews.news_Content_Comment_Collect manual__2024-02-15T08:36:05.963736+00:00 [queued]>
+[2024-02-15T18:29:59.477+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CollectNaverNews.news_Content_Comment_Collect manual__2024-02-15T08:36:05.963736+00:00 [queued]>
+[2024-02-15T18:29:59.477+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-15T18:29:59.646+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): news_Content_Comment_Collect> on 2024-02-15 08:36:05.963736+00:00
+[2024-02-15T18:29:59.653+0900] {standard_task_runner.py:60} INFO - Started process 18005 to run task
+[2024-02-15T18:29:59.657+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'CollectNaverNews', 'news_Content_Comment_Collect', 'manual__2024-02-15T08:36:05.963736+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/Naver_News_Collect.py', '--cfg-path', '/tmp/tmp7kzugf1n']
+[2024-02-15T18:29:59.660+0900] {standard_task_runner.py:88} INFO - Job 10: Subtask news_Content_Comment_Collect
+[2024-02-15T18:29:59.701+0900] {task_command.py:423} INFO - Running <TaskInstance: CollectNaverNews.news_Content_Comment_Collect manual__2024-02-15T08:36:05.963736+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-15T18:29:59.761+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='CollectNaverNews' AIRFLOW_CTX_TASK_ID='news_Content_Comment_Collect' AIRFLOW_CTX_EXECUTION_DATE='2024-02-15T08:36:05.963736+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-15T08:36:05.963736+00:00'
+[2024-02-15T18:29:59.773+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:29:59.862+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:29:59.951+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:30:00.034+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:30:00.715+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:30:01.863+0900] {Naver_News_Collect.py:120} INFO - 0 Start
+[2024-02-15T18:30:36.396+0900] {Naver_News_Collect.py:156} INFO - 1 End
+[2024-02-15T18:30:39.397+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:30:39.488+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:30:39.573+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:30:39.655+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:30:40.356+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:30:41.469+0900] {Naver_News_Collect.py:120} INFO - 1 Start
+[2024-02-15T18:31:04.047+0900] {Naver_News_Collect.py:156} INFO - 2 End
+[2024-02-15T18:31:06.050+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:31:06.138+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:31:06.222+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:31:06.306+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:31:06.986+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:31:07.895+0900] {Naver_News_Collect.py:120} INFO - 2 Start
+[2024-02-15T18:31:30.582+0900] {Naver_News_Collect.py:156} INFO - 3 End
+[2024-02-15T18:31:33.585+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:31:33.673+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:31:33.760+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:31:33.842+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:31:34.523+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:31:35.196+0900] {Naver_News_Collect.py:120} INFO - 3 Start
+[2024-02-15T18:31:57.423+0900] {Naver_News_Collect.py:156} INFO - 4 End
+[2024-02-15T18:32:00.427+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:32:00.515+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:00.598+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:00.681+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:32:01.361+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:32:02.294+0900] {Naver_News_Collect.py:120} INFO - 4 Start
+[2024-02-15T18:32:24.862+0900] {Naver_News_Collect.py:156} INFO - 5 End
+[2024-02-15T18:32:26.864+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:32:26.953+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:27.038+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:27.123+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:32:27.800+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:32:28.812+0900] {Naver_News_Collect.py:120} INFO - 5 Start
+[2024-02-15T18:32:51.477+0900] {Naver_News_Collect.py:156} INFO - 6 End
+[2024-02-15T18:32:53.480+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:32:53.567+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:53.654+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:32:53.738+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:32:54.414+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:32:55.341+0900] {Naver_News_Collect.py:120} INFO - 6 Start
+[2024-02-15T18:33:09.163+0900] {Naver_News_Collect.py:156} INFO - 7 End
+[2024-02-15T18:33:11.166+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:33:11.253+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:11.350+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:11.434+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:33:12.112+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:33:13.021+0900] {Naver_News_Collect.py:120} INFO - 7 Start
+[2024-02-15T18:33:25.733+0900] {Naver_News_Collect.py:156} INFO - 8 End
+[2024-02-15T18:33:27.736+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:33:27.826+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:27.914+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:27.997+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:33:28.678+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:33:29.651+0900] {Naver_News_Collect.py:120} INFO - 8 Start
+[2024-02-15T18:33:54.204+0900] {Naver_News_Collect.py:156} INFO - 9 End
+[2024-02-15T18:33:57.208+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:33:57.296+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:57.380+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:33:57.462+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:33:58.120+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:33:59.095+0900] {Naver_News_Collect.py:120} INFO - 9 Start
+[2024-02-15T18:34:21.735+0900] {Naver_News_Collect.py:156} INFO - 10 End
+[2024-02-15T18:34:23.738+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:34:23.826+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:34:23.910+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:34:23.994+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:34:24.674+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:34:25.576+0900] {Naver_News_Collect.py:120} INFO - 10 Start
+[2024-02-15T18:34:38.362+0900] {Naver_News_Collect.py:156} INFO - 11 End
+[2024-02-15T18:34:41.366+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:34:41.455+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:34:41.539+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:34:41.633+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:34:42.310+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:34:43.325+0900] {Naver_News_Collect.py:120} INFO - 11 Start
+[2024-02-15T18:35:05.456+0900] {Naver_News_Collect.py:156} INFO - 12 End
+[2024-02-15T18:35:08.460+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:35:08.551+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:08.646+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:08.737+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:35:09.415+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:35:10.439+0900] {Naver_News_Collect.py:120} INFO - 12 Start
+[2024-02-15T18:35:34.584+0900] {Naver_News_Collect.py:156} INFO - 13 End
+[2024-02-15T18:35:37.588+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:35:37.677+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:37.760+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:37.844+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:35:38.524+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:35:39.517+0900] {Naver_News_Collect.py:120} INFO - 13 Start
+[2024-02-15T18:35:53.374+0900] {Naver_News_Collect.py:156} INFO - 14 End
+[2024-02-15T18:35:56.377+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:35:56.468+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:56.551+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:35:56.634+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:35:57.322+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:35:58.056+0900] {Naver_News_Collect.py:120} INFO - 14 Start
+[2024-02-15T18:36:20.464+0900] {Naver_News_Collect.py:156} INFO - 15 End
+[2024-02-15T18:36:22.467+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:36:22.556+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:36:22.641+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:36:22.725+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:36:23.399+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:36:24.336+0900] {Naver_News_Collect.py:120} INFO - 15 Start
+[2024-02-15T18:36:49.010+0900] {Naver_News_Collect.py:156} INFO - 16 End
+[2024-02-15T18:36:52.014+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:36:52.102+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:36:52.186+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:36:52.269+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:36:52.946+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:36:53.968+0900] {Naver_News_Collect.py:120} INFO - 16 Start
+[2024-02-15T18:37:16.508+0900] {Naver_News_Collect.py:156} INFO - 17 End
+[2024-02-15T18:37:19.512+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:37:19.602+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:37:19.688+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:37:19.772+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:37:20.454+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:37:21.376+0900] {Naver_News_Collect.py:120} INFO - 17 Start
+[2024-02-15T18:37:43.959+0900] {Naver_News_Collect.py:156} INFO - 18 End
+[2024-02-15T18:37:46.962+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:37:47.052+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:37:47.136+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:37:47.222+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:37:47.893+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:37:48.849+0900] {Naver_News_Collect.py:120} INFO - 18 Start
+[2024-02-15T18:38:11.042+0900] {Naver_News_Collect.py:156} INFO - 19 End
+[2024-02-15T18:38:14.045+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:38:14.136+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:14.230+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:14.318+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:38:15.000+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:38:15.681+0900] {Naver_News_Collect.py:120} INFO - 19 Start
+[2024-02-15T18:38:37.969+0900] {Naver_News_Collect.py:156} INFO - 20 End
+[2024-02-15T18:38:39.971+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:38:40.061+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:40.144+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:40.227+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:38:40.903+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:38:41.945+0900] {Naver_News_Collect.py:120} INFO - 20 Start
+[2024-02-15T18:38:54.601+0900] {Naver_News_Collect.py:156} INFO - 21 End
+[2024-02-15T18:38:56.604+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:38:56.694+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:56.780+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:38:56.863+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:38:57.541+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:38:58.461+0900] {Naver_News_Collect.py:120} INFO - 21 Start
+[2024-02-15T18:39:11.373+0900] {Naver_News_Collect.py:156} INFO - 22 End
+[2024-02-15T18:39:13.376+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:39:13.464+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:39:13.554+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:39:13.637+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:39:14.317+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:39:15.284+0900] {Naver_News_Collect.py:120} INFO - 22 Start
+[2024-02-15T18:39:37.832+0900] {Naver_News_Collect.py:156} INFO - 23 End
+[2024-02-15T18:39:40.835+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:39:40.923+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:39:41.006+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:39:41.088+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:39:41.768+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:39:42.783+0900] {Naver_News_Collect.py:120} INFO - 23 Start
+[2024-02-15T18:40:05.349+0900] {Naver_News_Collect.py:156} INFO - 24 End
+[2024-02-15T18:40:08.352+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:40:08.442+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:40:08.526+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:40:08.611+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:40:09.287+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:40:10.382+0900] {Naver_News_Collect.py:120} INFO - 24 Start
+[2024-02-15T18:40:33.058+0900] {Naver_News_Collect.py:156} INFO - 25 End
+[2024-02-15T18:40:35.061+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:40:35.152+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:40:35.236+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:40:35.327+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:40:36.008+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:41:06.092+0900] {Naver_News_Collect.py:120} INFO - 25 Start
+[2024-02-15T18:41:16.179+0900] {Naver_News_Collect.py:156} INFO - 25 End
+[2024-02-15T18:41:18.182+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:41:18.272+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:41:18.357+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:41:18.440+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:41:19.118+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:41:49.203+0900] {Naver_News_Collect.py:120} INFO - 25 Start
+[2024-02-15T18:41:59.283+0900] {Naver_News_Collect.py:156} INFO - 25 End
+[2024-02-15T18:42:02.287+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:42:02.376+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:02.460+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:02.546+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:42:03.226+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:42:04.164+0900] {Naver_News_Collect.py:120} INFO - 25 Start
+[2024-02-15T18:42:18.257+0900] {Naver_News_Collect.py:156} INFO - 26 End
+[2024-02-15T18:42:21.260+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:42:21.351+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:21.447+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:21.530+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:42:22.226+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:42:23.168+0900] {Naver_News_Collect.py:120} INFO - 26 Start
+[2024-02-15T18:42:45.730+0900] {Naver_News_Collect.py:156} INFO - 27 End
+[2024-02-15T18:42:48.734+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:42:48.822+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:48.905+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:42:48.989+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:42:49.665+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:42:50.589+0900] {Naver_News_Collect.py:120} INFO - 27 Start
+[2024-02-15T18:43:13.178+0900] {Naver_News_Collect.py:156} INFO - 28 End
+[2024-02-15T18:43:15.180+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:43:15.269+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:43:15.354+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:43:15.436+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:43:16.125+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:43:17.069+0900] {Naver_News_Collect.py:120} INFO - 28 Start
+[2024-02-15T18:43:39.652+0900] {Naver_News_Collect.py:156} INFO - 29 End
+[2024-02-15T18:43:41.654+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:43:41.741+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:43:41.825+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:43:41.912+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:43:42.602+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:43:43.511+0900] {Naver_News_Collect.py:120} INFO - 29 Start
+[2024-02-15T18:44:06.093+0900] {Naver_News_Collect.py:156} INFO - 30 End
+[2024-02-15T18:44:09.096+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:44:09.185+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:44:09.269+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:44:09.352+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:44:10.027+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:44:10.970+0900] {Naver_News_Collect.py:120} INFO - 30 Start
+[2024-02-15T18:44:33.562+0900] {Naver_News_Collect.py:156} INFO - 31 End
+[2024-02-15T18:44:36.565+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:44:36.655+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:44:36.740+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:44:36.823+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:44:37.521+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:44:38.515+0900] {Naver_News_Collect.py:120} INFO - 31 Start
+[2024-02-15T18:45:01.026+0900] {Naver_News_Collect.py:156} INFO - 32 End
+[2024-02-15T18:45:04.029+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:45:04.118+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:04.205+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:04.292+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:45:04.974+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:45:05.891+0900] {Naver_News_Collect.py:120} INFO - 32 Start
+[2024-02-15T18:45:28.537+0900] {Naver_News_Collect.py:156} INFO - 33 End
+[2024-02-15T18:45:30.540+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:45:30.630+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:30.719+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:30.815+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:45:31.503+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:45:32.242+0900] {Naver_News_Collect.py:120} INFO - 33 Start
+[2024-02-15T18:45:54.087+0900] {Naver_News_Collect.py:156} INFO - 34 End
+[2024-02-15T18:45:56.089+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:45:56.179+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:56.263+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:45:56.348+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:45:57.027+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:45:57.762+0900] {Naver_News_Collect.py:120} INFO - 34 Start
+[2024-02-15T18:46:20.082+0900] {Naver_News_Collect.py:156} INFO - 35 End
+[2024-02-15T18:46:23.086+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:46:23.174+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:46:23.259+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:46:23.343+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:46:24.023+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:46:24.771+0900] {Naver_News_Collect.py:120} INFO - 35 Start
+[2024-02-15T18:46:47.030+0900] {Naver_News_Collect.py:156} INFO - 36 End
+[2024-02-15T18:46:50.034+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:46:50.122+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:46:50.206+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:46:50.289+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:46:50.967+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:46:51.923+0900] {Naver_News_Collect.py:120} INFO - 36 Start
+[2024-02-15T18:47:25.762+0900] {Naver_News_Collect.py:156} INFO - 37 End
+[2024-02-15T18:47:28.765+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:47:28.856+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:47:28.941+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:47:29.028+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:47:29.718+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:47:30.770+0900] {Naver_News_Collect.py:120} INFO - 37 Start
+[2024-02-15T18:47:53.340+0900] {Naver_News_Collect.py:156} INFO - 38 End
+[2024-02-15T18:47:55.343+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:47:55.432+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:47:55.516+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:47:55.599+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:47:56.272+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:48:26.359+0900] {Naver_News_Collect.py:120} INFO - 38 Start
+[2024-02-15T18:48:36.466+0900] {Naver_News_Collect.py:156} INFO - 38 End
+[2024-02-15T18:48:39.467+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:48:39.554+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:48:39.638+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:48:39.720+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:48:40.396+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:49:10.486+0900] {Naver_News_Collect.py:120} INFO - 38 Start
+[2024-02-15T18:49:20.589+0900] {Naver_News_Collect.py:156} INFO - 38 End
+[2024-02-15T18:49:23.592+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:49:23.681+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:49:23.765+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:49:23.850+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:49:24.531+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:49:25.452+0900] {Naver_News_Collect.py:120} INFO - 38 Start
+[2024-02-15T18:49:47.883+0900] {Naver_News_Collect.py:156} INFO - 39 End
+[2024-02-15T18:49:50.885+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:49:50.975+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:49:51.059+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:49:51.141+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:49:51.816+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:49:52.757+0900] {Naver_News_Collect.py:120} INFO - 39 Start
+[2024-02-15T18:50:15.395+0900] {Naver_News_Collect.py:156} INFO - 40 End
+[2024-02-15T18:50:18.399+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:50:18.489+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:50:18.574+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:50:18.660+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:50:19.349+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:50:20.353+0900] {Naver_News_Collect.py:120} INFO - 40 Start
+[2024-02-15T18:50:42.510+0900] {Naver_News_Collect.py:156} INFO - 41 End
+[2024-02-15T18:50:44.513+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:50:44.603+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:50:44.688+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:50:44.772+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:50:45.458+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:50:46.428+0900] {Naver_News_Collect.py:120} INFO - 41 Start
+[2024-02-15T18:51:09.011+0900] {Naver_News_Collect.py:156} INFO - 42 End
+[2024-02-15T18:51:11.014+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:51:11.105+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:11.189+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:11.276+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:51:11.964+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:51:12.629+0900] {Naver_News_Collect.py:120} INFO - 42 Start
+[2024-02-15T18:51:25.077+0900] {Naver_News_Collect.py:156} INFO - 43 End
+[2024-02-15T18:51:27.079+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:51:27.169+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:27.253+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:27.338+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:51:28.021+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:51:28.765+0900] {Naver_News_Collect.py:120} INFO - 43 Start
+[2024-02-15T18:51:51.066+0900] {Naver_News_Collect.py:156} INFO - 44 End
+[2024-02-15T18:51:53.069+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:51:53.157+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:53.244+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:51:53.329+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:51:54.004+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:51:54.971+0900] {Naver_News_Collect.py:120} INFO - 44 Start
+[2024-02-15T18:52:07.741+0900] {Naver_News_Collect.py:156} INFO - 45 End
+[2024-02-15T18:52:10.745+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:52:10.835+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:52:10.919+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:52:11.002+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:52:11.703+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:52:12.716+0900] {Naver_News_Collect.py:120} INFO - 45 Start
+[2024-02-15T18:52:35.510+0900] {Naver_News_Collect.py:156} INFO - 46 End
+[2024-02-15T18:52:38.514+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:52:38.602+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:52:38.687+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:52:38.770+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:52:39.452+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:52:40.475+0900] {Naver_News_Collect.py:120} INFO - 46 Start
+[2024-02-15T18:53:03.112+0900] {Naver_News_Collect.py:156} INFO - 47 End
+[2024-02-15T18:53:06.113+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:53:06.201+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:06.286+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:06.368+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:53:07.058+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:53:07.772+0900] {Naver_News_Collect.py:120} INFO - 47 Start
+[2024-02-15T18:53:30.071+0900] {Naver_News_Collect.py:156} INFO - 48 End
+[2024-02-15T18:53:33.075+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:53:33.164+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:33.248+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:33.333+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:53:34.008+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:53:35.000+0900] {Naver_News_Collect.py:120} INFO - 48 Start
+[2024-02-15T18:53:48.711+0900] {Naver_News_Collect.py:156} INFO - 49 End
+[2024-02-15T18:53:51.715+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:53:51.804+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:51.899+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:53:51.982+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:53:52.659+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:53:53.513+0900] {Naver_News_Collect.py:120} INFO - 49 Start
+[2024-02-15T18:54:16.835+0900] {Naver_News_Collect.py:156} INFO - 50 End
+[2024-02-15T18:54:19.838+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:54:19.927+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:54:20.011+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:54:20.094+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:54:20.785+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:54:21.971+0900] {Naver_News_Collect.py:120} INFO - 50 Start
+[2024-02-15T18:54:44.702+0900] {Naver_News_Collect.py:156} INFO - 51 End
+[2024-02-15T18:54:47.706+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:54:47.795+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:54:47.878+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:54:47.961+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:54:48.637+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:54:49.774+0900] {Naver_News_Collect.py:120} INFO - 51 Start
+[2024-02-15T18:55:02.447+0900] {Naver_News_Collect.py:156} INFO - 52 End
+[2024-02-15T18:55:04.450+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:55:04.539+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:04.623+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:04.707+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:55:05.382+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:55:06.542+0900] {Naver_News_Collect.py:120} INFO - 52 Start
+[2024-02-15T18:55:29.179+0900] {Naver_News_Collect.py:156} INFO - 53 End
+[2024-02-15T18:55:32.183+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:55:32.274+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:32.360+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:32.445+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:55:33.121+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:55:34.222+0900] {Naver_News_Collect.py:120} INFO - 53 Start
+[2024-02-15T18:55:56.894+0900] {Naver_News_Collect.py:156} INFO - 54 End
+[2024-02-15T18:55:58.897+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:55:58.987+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:59.072+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:55:59.156+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:55:59.834+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:56:01.038+0900] {Naver_News_Collect.py:120} INFO - 54 Start
+[2024-02-15T18:56:23.739+0900] {Naver_News_Collect.py:156} INFO - 55 End
+[2024-02-15T18:56:25.742+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:56:25.830+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:56:25.913+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:56:25.995+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:56:26.664+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:56:27.771+0900] {Naver_News_Collect.py:120} INFO - 55 Start
+[2024-02-15T18:56:50.301+0900] {Naver_News_Collect.py:156} INFO - 56 End
+[2024-02-15T18:56:53.305+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:56:53.392+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:56:53.476+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:56:53.560+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:56:54.239+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:57:24.333+0900] {Naver_News_Collect.py:120} INFO - 56 Start
+[2024-02-15T18:57:34.428+0900] {Naver_News_Collect.py:156} INFO - 56 End
+[2024-02-15T18:57:36.429+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:57:36.517+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:57:36.601+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:57:36.697+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:57:37.378+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:57:38.420+0900] {Naver_News_Collect.py:120} INFO - 56 Start
+[2024-02-15T18:57:51.194+0900] {Naver_News_Collect.py:156} INFO - 57 End
+[2024-02-15T18:57:54.198+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:57:54.287+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:57:54.372+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:57:54.456+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:57:55.132+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:57:56.160+0900] {Naver_News_Collect.py:120} INFO - 57 Start
+[2024-02-15T18:58:18.633+0900] {Naver_News_Collect.py:156} INFO - 58 End
+[2024-02-15T18:58:20.635+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:58:20.723+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:58:20.807+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:58:20.890+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:58:21.570+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:58:22.609+0900] {Naver_News_Collect.py:120} INFO - 58 Start
+[2024-02-15T18:58:45.249+0900] {Naver_News_Collect.py:156} INFO - 59 End
+[2024-02-15T18:58:48.253+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:58:48.342+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:58:48.425+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:58:48.508+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:58:49.184+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:58:50.008+0900] {Naver_News_Collect.py:120} INFO - 59 Start
+[2024-02-15T18:59:12.314+0900] {Naver_News_Collect.py:156} INFO - 60 End
+[2024-02-15T18:59:15.317+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:59:15.405+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:59:15.491+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:59:15.579+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:59:16.262+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:59:17.316+0900] {Naver_News_Collect.py:120} INFO - 60 Start
+[2024-02-15T18:59:39.994+0900] {Naver_News_Collect.py:156} INFO - 61 End
+[2024-02-15T18:59:41.997+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T18:59:42.085+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:59:42.172+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T18:59:42.255+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T18:59:42.932+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T18:59:43.983+0900] {Naver_News_Collect.py:120} INFO - 61 Start
+[2024-02-15T19:00:06.501+0900] {Naver_News_Collect.py:156} INFO - 62 End
+[2024-02-15T19:00:09.505+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:00:09.596+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:00:09.679+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:00:09.764+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:00:10.446+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:00:11.627+0900] {Naver_News_Collect.py:120} INFO - 62 Start
+[2024-02-15T19:00:34.328+0900] {Naver_News_Collect.py:156} INFO - 63 End
+[2024-02-15T19:00:37.332+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:00:37.422+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:00:37.516+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:00:37.601+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:00:38.284+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:00:39.373+0900] {Naver_News_Collect.py:120} INFO - 63 Start
+[2024-02-15T19:01:02.025+0900] {Naver_News_Collect.py:156} INFO - 64 End
+[2024-02-15T19:01:04.028+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:01:04.118+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:04.208+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:04.291+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:01:04.985+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:01:06.072+0900] {Naver_News_Collect.py:120} INFO - 64 Start
+[2024-02-15T19:01:28.716+0900] {Naver_News_Collect.py:156} INFO - 65 End
+[2024-02-15T19:01:31.720+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:01:31.809+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:31.899+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:31.988+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:01:32.663+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:01:33.757+0900] {Naver_News_Collect.py:120} INFO - 65 Start
+[2024-02-15T19:01:46.559+0900] {Naver_News_Collect.py:156} INFO - 66 End
+[2024-02-15T19:01:48.561+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:01:48.651+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:48.746+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:01:48.840+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:01:49.532+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:01:50.616+0900] {Naver_News_Collect.py:120} INFO - 66 Start
+[2024-02-15T19:02:13.243+0900] {Naver_News_Collect.py:156} INFO - 67 End
+[2024-02-15T19:02:16.246+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:02:16.335+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:02:16.419+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:02:16.501+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:02:17.190+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:02:18.271+0900] {Naver_News_Collect.py:120} INFO - 67 Start
+[2024-02-15T19:02:40.943+0900] {Naver_News_Collect.py:156} INFO - 68 End
+[2024-02-15T19:02:43.947+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:02:44.036+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:02:44.124+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:02:44.210+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:02:44.904+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:02:45.973+0900] {Naver_News_Collect.py:120} INFO - 68 Start
+[2024-02-15T19:03:08.658+0900] {Naver_News_Collect.py:156} INFO - 69 End
+[2024-02-15T19:03:10.660+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:03:10.751+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:10.835+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:10.919+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:03:11.596+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:03:12.688+0900] {Naver_News_Collect.py:120} INFO - 69 Start
+[2024-02-15T19:03:25.660+0900] {Naver_News_Collect.py:156} INFO - 70 End
+[2024-02-15T19:03:27.663+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:03:27.753+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:27.837+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:27.919+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:03:28.595+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:03:29.683+0900] {Naver_News_Collect.py:120} INFO - 70 Start
+[2024-02-15T19:03:53.765+0900] {Naver_News_Collect.py:156} INFO - 71 End
+[2024-02-15T19:03:55.767+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:03:55.856+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:55.939+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:03:56.022+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:03:56.704+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:03:57.774+0900] {Naver_News_Collect.py:120} INFO - 71 Start
+[2024-02-15T19:04:20.670+0900] {Naver_News_Collect.py:156} INFO - 72 End
+[2024-02-15T19:04:23.674+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:04:23.762+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:04:23.848+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:04:23.931+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:04:24.608+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:04:25.723+0900] {Naver_News_Collect.py:120} INFO - 72 Start
+[2024-02-15T19:04:48.442+0900] {Naver_News_Collect.py:156} INFO - 73 End
+[2024-02-15T19:04:51.446+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:04:51.534+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:04:51.618+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:04:51.701+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:04:52.382+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:04:53.427+0900] {Naver_News_Collect.py:120} INFO - 73 Start
+[2024-02-15T19:05:16.078+0900] {Naver_News_Collect.py:156} INFO - 74 End
+[2024-02-15T19:05:18.081+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:05:18.172+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:05:18.256+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:05:18.343+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:05:19.026+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:05:20.140+0900] {Naver_News_Collect.py:120} INFO - 74 Start
+[2024-02-15T19:05:32.981+0900] {Naver_News_Collect.py:156} INFO - 75 End
+[2024-02-15T19:05:34.983+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:05:35.073+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:05:35.158+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:05:35.244+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:05:35.923+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:05:37.067+0900] {Naver_News_Collect.py:120} INFO - 75 Start
+[2024-02-15T19:05:59.748+0900] {Naver_News_Collect.py:156} INFO - 76 End
+[2024-02-15T19:06:01.750+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:06:01.842+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:01.929+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:02.016+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:06:02.693+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:06:03.814+0900] {Naver_News_Collect.py:120} INFO - 76 Start
+[2024-02-15T19:06:25.894+0900] {Naver_News_Collect.py:156} INFO - 77 End
+[2024-02-15T19:06:27.896+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:06:27.984+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:28.068+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:28.150+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:06:28.811+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:06:29.931+0900] {Naver_News_Collect.py:120} INFO - 77 Start
+[2024-02-15T19:06:52.505+0900] {Naver_News_Collect.py:156} INFO - 78 End
+[2024-02-15T19:06:54.508+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:06:54.597+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:54.681+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:06:54.765+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:06:55.459+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:06:56.557+0900] {Naver_News_Collect.py:120} INFO - 78 Start
+[2024-02-15T19:07:09.431+0900] {Naver_News_Collect.py:156} INFO - 79 End
+[2024-02-15T19:07:12.433+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:07:12.522+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:07:12.605+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:07:12.688+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:07:13.364+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:07:14.500+0900] {Naver_News_Collect.py:120} INFO - 79 Start
+[2024-02-15T19:07:57.860+0900] {Naver_News_Collect.py:156} INFO - 80 End
+[2024-02-15T19:08:00.864+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:08:00.952+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:08:01.038+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:08:01.130+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:08:01.807+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:08:31.901+0900] {Naver_News_Collect.py:120} INFO - 80 Start
+[2024-02-15T19:08:41.998+0900] {Naver_News_Collect.py:156} INFO - 80 End
+[2024-02-15T19:08:44.001+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:08:44.090+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:08:44.175+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:08:44.261+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:08:44.940+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:08:46.069+0900] {Naver_News_Collect.py:120} INFO - 80 Start
+[2024-02-15T19:09:08.775+0900] {Naver_News_Collect.py:156} INFO - 81 End
+[2024-02-15T19:09:11.778+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:09:11.867+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:11.951+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:12.033+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:09:12.708+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:09:13.805+0900] {Naver_News_Collect.py:120} INFO - 81 Start
+[2024-02-15T19:09:26.568+0900] {Naver_News_Collect.py:156} INFO - 82 End
+[2024-02-15T19:09:28.571+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:09:28.659+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:28.746+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:28.831+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:09:29.507+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:09:30.307+0900] {Naver_News_Collect.py:120} INFO - 82 Start
+[2024-02-15T19:09:52.625+0900] {Naver_News_Collect.py:156} INFO - 83 End
+[2024-02-15T19:09:54.628+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:09:54.715+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:54.800+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:09:54.886+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:09:55.577+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:09:56.662+0900] {Naver_News_Collect.py:120} INFO - 83 Start
+[2024-02-15T19:10:19.240+0900] {Naver_News_Collect.py:156} INFO - 84 End
+[2024-02-15T19:10:21.243+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:10:21.332+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:21.415+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:21.499+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:10:22.176+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:10:23.298+0900] {Naver_News_Collect.py:120} INFO - 84 Start
+[2024-02-15T19:10:36.019+0900] {Naver_News_Collect.py:156} INFO - 85 End
+[2024-02-15T19:10:39.023+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:10:39.114+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:39.198+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:39.281+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:10:39.970+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:10:41.071+0900] {Naver_News_Collect.py:120} INFO - 85 Start
+[2024-02-15T19:10:55.057+0900] {Naver_News_Collect.py:156} INFO - 86 End
+[2024-02-15T19:10:57.060+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:10:57.151+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:57.242+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:10:57.330+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:10:58.011+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:10:59.144+0900] {Naver_News_Collect.py:120} INFO - 86 Start
+[2024-02-15T19:11:21.285+0900] {Naver_News_Collect.py:156} INFO - 87 End
+[2024-02-15T19:11:23.287+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:11:23.377+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:11:23.464+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:11:23.549+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:11:24.235+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:11:25.362+0900] {Naver_News_Collect.py:120} INFO - 87 Start
+[2024-02-15T19:11:47.877+0900] {Naver_News_Collect.py:156} INFO - 88 End
+[2024-02-15T19:11:49.879+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:11:49.968+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:11:50.052+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:11:50.134+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:11:50.809+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:11:51.649+0900] {Naver_News_Collect.py:120} INFO - 88 Start
+[2024-02-15T19:12:13.940+0900] {Naver_News_Collect.py:156} INFO - 89 End
+[2024-02-15T19:12:15.943+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:12:16.031+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:12:16.113+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:12:16.196+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:12:16.874+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:12:18.078+0900] {Naver_News_Collect.py:120} INFO - 89 Start
+[2024-02-15T19:12:40.653+0900] {Naver_News_Collect.py:156} INFO - 90 End
+[2024-02-15T19:12:43.657+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:12:43.744+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:12:43.827+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:12:43.909+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:12:44.579+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:12:45.620+0900] {Naver_News_Collect.py:120} INFO - 90 Start
+[2024-02-15T19:12:58.301+0900] {Naver_News_Collect.py:156} INFO - 91 End
+[2024-02-15T19:13:00.304+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:13:00.391+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:00.474+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:00.558+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:13:01.240+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:13:02.380+0900] {Naver_News_Collect.py:120} INFO - 91 Start
+[2024-02-15T19:13:24.986+0900] {Naver_News_Collect.py:156} INFO - 92 End
+[2024-02-15T19:13:27.990+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:13:28.077+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:28.160+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:28.243+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:13:28.921+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:13:29.951+0900] {Naver_News_Collect.py:120} INFO - 92 Start
+[2024-02-15T19:13:42.717+0900] {Naver_News_Collect.py:156} INFO - 93 End
+[2024-02-15T19:13:45.720+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:13:45.809+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:45.893+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:13:45.976+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:13:46.647+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:13:47.692+0900] {Naver_News_Collect.py:120} INFO - 93 Start
+[2024-02-15T19:14:10.334+0900] {Naver_News_Collect.py:156} INFO - 94 End
+[2024-02-15T19:14:12.337+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:14:12.425+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:12.510+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:12.597+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:14:13.284+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:14:14.418+0900] {Naver_News_Collect.py:120} INFO - 94 Start
+[2024-02-15T19:14:37.002+0900] {Naver_News_Collect.py:156} INFO - 95 End
+[2024-02-15T19:14:39.004+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:14:39.092+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:39.184+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:39.273+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:14:39.948+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:14:41.102+0900] {Naver_News_Collect.py:120} INFO - 95 Start
+[2024-02-15T19:14:53.800+0900] {Naver_News_Collect.py:156} INFO - 96 End
+[2024-02-15T19:14:55.803+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:14:55.892+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:55.979+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:14:56.067+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:14:56.754+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:14:57.888+0900] {Naver_News_Collect.py:120} INFO - 96 Start
+[2024-02-15T19:15:11.145+0900] {Naver_News_Collect.py:156} INFO - 97 End
+[2024-02-15T19:15:13.148+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:15:13.237+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:15:13.320+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:15:13.404+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:15:14.092+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:15:15.206+0900] {Naver_News_Collect.py:120} INFO - 97 Start
+[2024-02-15T19:15:49.096+0900] {Naver_News_Collect.py:156} INFO - 98 End
+[2024-02-15T19:15:51.099+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:15:51.188+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:15:51.271+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:15:51.353+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:15:52.057+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:15:53.286+0900] {Naver_News_Collect.py:120} INFO - 98 Start
+[2024-02-15T19:17:13.680+0900] {Naver_News_Collect.py:156} INFO - 99 End
+[2024-02-15T19:17:15.681+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:17:15.770+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:15.854+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:15.937+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:17:16.623+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:17:17.338+0900] {Naver_News_Collect.py:120} INFO - 99 Start
+[2024-02-15T19:17:39.618+0900] {Naver_News_Collect.py:156} INFO - 100 End
+[2024-02-15T19:17:41.621+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:17:41.710+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:41.794+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:41.877+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:17:42.554+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:17:43.490+0900] {Naver_News_Collect.py:120} INFO - 100 Start
+[2024-02-15T19:17:56.663+0900] {Naver_News_Collect.py:156} INFO - 101 End
+[2024-02-15T19:17:59.667+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:17:59.755+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:59.839+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:17:59.923+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:18:00.602+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:18:01.682+0900] {Naver_News_Collect.py:120} INFO - 101 Start
+[2024-02-15T19:18:15.725+0900] {Naver_News_Collect.py:156} INFO - 102 End
+[2024-02-15T19:18:18.728+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:18:18.818+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:18:18.901+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:18:18.985+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:18:19.669+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:18:20.600+0900] {Naver_News_Collect.py:120} INFO - 102 Start
+[2024-02-15T19:18:54.999+0900] {Naver_News_Collect.py:156} INFO - 103 End
+[2024-02-15T19:18:58.002+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:18:58.090+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:18:58.173+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:18:58.255+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:18:58.925+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:18:59.857+0900] {Naver_News_Collect.py:120} INFO - 103 Start
+[2024-02-15T19:19:12.803+0900] {Naver_News_Collect.py:156} INFO - 104 End
+[2024-02-15T19:19:14.806+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:19:14.895+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:14.988+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:15.086+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:19:15.761+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:19:16.718+0900] {Naver_News_Collect.py:120} INFO - 104 Start
+[2024-02-15T19:19:29.762+0900] {Naver_News_Collect.py:156} INFO - 105 End
+[2024-02-15T19:19:32.765+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:19:32.854+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:32.939+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:33.022+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:19:33.704+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:19:34.669+0900] {Naver_News_Collect.py:120} INFO - 105 Start
+[2024-02-15T19:19:47.589+0900] {Naver_News_Collect.py:156} INFO - 106 End
+[2024-02-15T19:19:49.592+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:19:49.680+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:49.765+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:19:49.847+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:19:50.536+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:19:51.440+0900] {Naver_News_Collect.py:120} INFO - 106 Start
+[2024-02-15T19:20:14.547+0900] {Naver_News_Collect.py:156} INFO - 107 End
+[2024-02-15T19:20:17.550+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:20:17.641+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:20:17.724+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:20:17.809+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:20:18.484+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:20:19.452+0900] {Naver_News_Collect.py:120} INFO - 107 Start
+[2024-02-15T19:20:41.641+0900] {Naver_News_Collect.py:156} INFO - 108 End
+[2024-02-15T19:20:43.644+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-15T19:20:43.734+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:20:43.819+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-15T19:20:43.903+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.85/chromedriver-linux64/chromedriver] found in cache
+[2024-02-15T19:20:44.579+0900] {Naver_News_Collect.py:117} INFO - 접속완료
+[2024-02-15T19:20:45.585+0900] {Naver_News_Collect.py:120} INFO - 108 Start
+[2024-02-15T19:21:08.540+0900] {Naver_News_Collect.py:156} INFO - 109 End
+[2024-02-15T19:21:10.942+0900] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-15T19:21:10.948+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=CollectNaverNews, task_id=news_Content_Comment_Collect, execution_date=20240215T083605, start_date=20240215T092959, end_date=20240215T102110
+[2024-02-15T19:21:10.999+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-15T19:21:11.010+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

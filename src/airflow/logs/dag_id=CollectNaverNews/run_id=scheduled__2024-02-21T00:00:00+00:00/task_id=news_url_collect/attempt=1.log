@@ -1,0 +1,23 @@
+[2024-02-22T09:00:09.832+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CollectNaverNews.news_url_collect scheduled__2024-02-21T00:00:00+00:00 [queued]>
+[2024-02-22T09:00:09.839+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CollectNaverNews.news_url_collect scheduled__2024-02-21T00:00:00+00:00 [queued]>
+[2024-02-22T09:00:09.839+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-22T09:00:09.967+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): news_url_collect> on 2024-02-21 00:00:00+00:00
+[2024-02-22T09:00:09.975+0900] {standard_task_runner.py:60} INFO - Started process 256416 to run task
+[2024-02-22T09:00:09.978+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'CollectNaverNews', 'news_url_collect', 'scheduled__2024-02-21T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/Naver_News_Collect.py', '--cfg-path', '/tmp/tmpjwq2tlw5']
+[2024-02-22T09:00:09.981+0900] {standard_task_runner.py:88} INFO - Job 85: Subtask news_url_collect
+[2024-02-22T09:00:10.021+0900] {task_command.py:423} INFO - Running <TaskInstance: CollectNaverNews.news_url_collect scheduled__2024-02-21T00:00:00+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-22T09:00:10.088+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='CollectNaverNews' AIRFLOW_CTX_TASK_ID='news_url_collect' AIRFLOW_CTX_EXECUTION_DATE='2024-02-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-21T00:00:00+00:00'
+[2024-02-22T09:00:10.091+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-22T09:00:10.173+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-22T09:00:10.264+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-22T09:00:10.347+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-22T09:00:10.526+0900] {logger.py:11} INFO - WebDriver version 121.0.6167.184 selected
+[2024-02-22T09:00:10.528+0900] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/121.0.6167.184/linux64/chromedriver-linux64.zip
+[2024-02-22T09:00:10.529+0900] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/121.0.6167.184/linux64/chromedriver-linux64.zip
+[2024-02-22T09:00:10.651+0900] {logger.py:11} INFO - Driver downloading response is 200
+[2024-02-22T09:00:10.732+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-22T09:00:11.008+0900] {logger.py:11} INFO - Driver has been saved in cache [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184]
+[2024-02-22T09:00:24.533+0900] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-22T09:00:24.540+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=CollectNaverNews, task_id=news_url_collect, execution_date=20240221T000000, start_date=20240222T000009, end_date=20240222T000024
+[2024-02-22T09:00:24.598+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-22T09:00:24.612+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

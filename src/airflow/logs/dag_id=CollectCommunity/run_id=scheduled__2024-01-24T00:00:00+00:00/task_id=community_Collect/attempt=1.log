@@ -1,0 +1,24 @@
+[2024-02-15T17:36:06.729+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CollectCommunity.community_Collect scheduled__2024-01-24T00:00:00+00:00 [queued]>
+[2024-02-15T17:36:06.737+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CollectCommunity.community_Collect scheduled__2024-01-24T00:00:00+00:00 [queued]>
+[2024-02-15T17:36:06.737+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-15T17:36:06.919+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): community_Collect> on 2024-01-24 00:00:00+00:00
+[2024-02-15T17:36:06.925+0900] {standard_task_runner.py:60} INFO - Started process 6167 to run task
+[2024-02-15T17:36:06.929+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'CollectCommunity', 'community_Collect', 'scheduled__2024-01-24T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/.ipynb_checkpoints/Community_Collect-checkpoint.py', '--cfg-path', '/tmp/tmpp6c74_80']
+[2024-02-15T17:36:06.931+0900] {standard_task_runner.py:88} INFO - Job 3: Subtask community_Collect
+[2024-02-15T17:36:06.975+0900] {task_command.py:423} INFO - Running <TaskInstance: CollectCommunity.community_Collect scheduled__2024-01-24T00:00:00+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-15T17:36:07.041+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='CollectCommunity' AIRFLOW_CTX_TASK_ID='community_Collect' AIRFLOW_CTX_EXECUTION_DATE='2024-01-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-24T00:00:00+00:00'
+[2024-02-15T17:36:09.713+0900] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.10/dist-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/ubuntu/airflow/dags/.ipynb_checkpoints/Community_Collect-checkpoint.py", line 88, in community_Collect
+    df.to_csv(f"/home/ubuntu/community_list/{today}_community_URL.csv", index = None)
+NameError: name 'df' is not defined
+[2024-02-15T17:36:09.718+0900] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=CollectCommunity, task_id=community_Collect, execution_date=20240124T000000, start_date=20240215T083606, end_date=20240215T083609
+[2024-02-15T17:36:09.732+0900] {standard_task_runner.py:107} ERROR - Failed to execute job 3 for task community_Collect (name 'df' is not defined; 6167)
+[2024-02-15T17:36:09.753+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-15T17:36:09.775+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

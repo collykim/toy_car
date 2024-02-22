@@ -1,0 +1,249 @@
+[2024-02-20T09:00:29.922+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: CollectCommunity.community_Content_Collect scheduled__2024-02-19T00:00:00+00:00 [queued]>
+[2024-02-20T09:00:29.929+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: CollectCommunity.community_Content_Collect scheduled__2024-02-19T00:00:00+00:00 [queued]>
+[2024-02-20T09:00:29.929+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-02-20T09:00:30.057+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): community_Content_Collect> on 2024-02-19 00:00:00+00:00
+[2024-02-20T09:00:30.064+0900] {standard_task_runner.py:60} INFO - Started process 126825 to run task
+[2024-02-20T09:00:30.067+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'CollectCommunity', 'community_Content_Collect', 'scheduled__2024-02-19T00:00:00+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/Community_Collect.py', '--cfg-path', '/tmp/tmp7blb7jbo']
+[2024-02-20T09:00:30.069+0900] {standard_task_runner.py:88} INFO - Job 74: Subtask community_Content_Collect
+[2024-02-20T09:00:30.107+0900] {task_command.py:423} INFO - Running <TaskInstance: CollectCommunity.community_Content_Collect scheduled__2024-02-19T00:00:00+00:00 [running]> on host ip-172-31-11-88.ap-northeast-2.compute.internal
+[2024-02-20T09:00:30.173+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='CollectCommunity' AIRFLOW_CTX_TASK_ID='community_Content_Collect' AIRFLOW_CTX_EXECUTION_DATE='2024-02-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-02-19T00:00:00+00:00'
+[2024-02-20T09:00:30.186+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:00:30.269+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:30.355+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:30.438+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:00:35.078+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:00:35.160+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:35.244+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:35.326+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:00:39.768+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:00:39.850+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:39.932+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:00:40.016+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:16:28.239+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:16:28.321+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:28.408+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:28.490+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:16:33.854+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:16:33.935+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:34.034+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:34.114+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:16:39.853+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:16:39.935+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:40.018+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:40.102+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:16:55.011+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:16:55.093+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:55.175+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:16:55.256+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:00.930+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:01.011+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:01.092+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:01.174+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:07.232+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:07.313+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:07.394+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:07.476+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:22.611+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:22.692+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:22.774+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:22.855+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:38.970+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:39.050+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:39.131+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:39.211+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:45.486+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:45.568+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:45.651+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:45.734+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:52.011+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:52.094+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:52.178+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:52.260+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:17:59.020+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:17:59.102+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:59.184+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:17:59.277+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:05.813+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:05.896+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:05.978+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:06.061+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:12.292+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:12.375+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:12.458+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:12.540+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:18.980+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:19.062+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:19.143+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:19.226+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:27.099+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:27.178+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:27.259+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:27.340+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:34.672+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:34.754+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:34.849+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:34.931+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:40.924+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:41.006+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:41.087+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:41.168+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:48.400+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:48.482+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:48.565+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:48.653+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:18:55.826+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:18:55.908+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:55.989+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:18:56.072+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:02.460+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:02.541+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:02.622+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:02.704+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:10.223+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:10.305+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:10.387+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:10.469+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:19.017+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:19.098+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:19.181+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:19.263+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:25.087+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:25.169+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:25.254+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:25.334+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:33.055+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:33.136+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:33.225+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:33.309+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:41.752+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:41.833+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:41.914+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:41.995+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:48.355+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:48.437+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:48.520+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:48.602+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:19:55.980+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:19:56.062+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:56.144+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:19:56.225+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:03.993+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:04.075+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:04.157+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:04.238+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:11.523+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:11.607+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:11.689+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:11.772+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:18.858+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:18.940+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:19.023+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:19.105+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:25.509+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:25.594+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:25.676+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:25.759+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:32.245+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:32.328+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:32.413+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:32.494+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:39.399+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:39.482+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:39.566+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:39.646+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:46.588+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:46.669+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:46.750+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:46.832+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:20:53.593+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:20:53.676+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:53.759+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:20:53.842+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:00.309+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:00.392+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:00.475+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:00.557+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:07.397+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:07.481+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:07.573+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:07.655+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:15.261+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:15.343+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:15.425+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:15.506+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:22.889+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:22.971+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:23.054+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:23.136+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:30.063+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:30.145+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:30.231+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:30.312+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:36.803+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:36.885+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:36.966+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:37.047+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:43.817+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:43.899+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:43.981+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:44.063+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:50.358+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:50.439+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:50.521+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:50.604+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:21:56.726+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:21:56.807+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:56.890+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:21:56.971+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:05.283+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:05.366+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:05.448+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:05.530+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:13.274+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:13.356+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:13.438+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:13.519+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:21.393+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:21.476+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:21.558+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:21.640+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:28.579+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:28.662+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:28.745+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:28.827+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:36.071+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:36.152+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:36.234+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:36.315+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:43.125+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:43.207+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:43.289+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:43.370+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:51.356+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:51.437+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:51.518+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:51.600+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:22:59.272+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:22:59.354+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:59.436+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:22:59.519+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:23:06.820+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:23:06.902+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:06.984+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:07.066+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:23:13.645+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:23:13.727+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:13.820+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:13.905+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:23:31.652+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:23:31.733+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:31.814+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:31.895+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:23:47.924+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-02-20T09:23:48.006+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:48.088+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-02-20T09:23:48.168+0900] {logger.py:11} INFO - Driver [/home/ubuntu/.wdm/drivers/chromedriver/linux64/121.0.6167.184/chromedriver-linux64/chromedriver] found in cache
+[2024-02-20T09:23:54.456+0900] {python.py:201} INFO - Done. Returned value was: None
+[2024-02-20T09:23:54.461+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=CollectCommunity, task_id=community_Content_Collect, execution_date=20240219T000000, start_date=20240220T000029, end_date=20240220T002354
+[2024-02-20T09:23:54.519+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-20T09:23:54.529+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
