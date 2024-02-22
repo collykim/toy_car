@@ -25,8 +25,8 @@ community = community.withColumn("concatenated", concat(col("title"),col("conten
     .withColumn("dup_hash",sha2("concatenated",256))
 
 # 4. sql 테이블에 hash 테이블을 생성하여 새롭게 insert될 row들과 비교
-jdbc_url = "jdbc:postgresql://43.201.147.199:5432/toy"
-properties = {"user": "root", "password": "1234", "driver": "org.postgresql.Driver"}
+jdbc_url = "jdbc:postgresql://postgresqlIp/databases"
+properties = {"user": userid, "password": password, "driver": "org.postgresql.Driver"}
 
 # 5. 중복 제거된 row들을 postgreSQL에 insert
 # PostgreSQL 테이블의 데이터를 DataFrame으로 읽기
