@@ -1,5 +1,5 @@
-# toy_car
-## 자동차 데이터 Datawarehouse 구축
+# Toy_car
+자동차 데이터 Datawarehouse 구축
 
 1. 데이터 수집
   수집처 - 네이버 뉴스(자동차), 커뮤니티(보배드림)
