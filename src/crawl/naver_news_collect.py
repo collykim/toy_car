@@ -114,8 +114,8 @@ parquet_buffer = BytesIO()
 df.to_parquet(parquet_buffer, index=False)
 
 # S3에 연결
-s3 = boto3.client('s3', aws_access_key_id='AKIA4LH2MAOFAW5PUKUT',
-                  aws_secret_access_key='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')
+s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id,
+                  aws_secret_access_key=aws_secret_access_key)
 
 # 버킷 이름과 저장할 파일 경로 설정
 bucket_name = 'hyunwoo-toy-project-bucket'
